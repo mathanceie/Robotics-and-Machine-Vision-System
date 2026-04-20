@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20EI254 Robotics and Machine Vision System</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #e2e8f0;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 260px;
+      height: 100vh;
+      background: rgba(2,6,23,0.95);
+      padding: 25px;
+      position: fixed;
+      backdrop-filter: blur(10px);
+      border-right: 1px solid #1e293b;
+    }
+
+    .sidebar h2 {
+      color: #38bdf8;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px;
+      margin-bottom: 10px;
+      color: #cbd5f5;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background: #1e293b;
+      transform: translateX(5px);
+    }
+
+    /* Main */
+    .main {
+      margin-left: 270px;
+      padding: 40px;
+      width: 100%;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    /* Cards */
+    .card {
+      background: rgba(2,6,23,0.8);
+      padding: 25px;
+      border-radius: 20px;
+      transition: 0.4s;
+      border: 1px solid #1e293b;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      background: #1e293b;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #7dd3fc;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Section */
+    .section {
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .sidebar { position: relative; width: 100%; height: auto; }
+      .main { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>?? Robotics Course</h2>
+    <a href="#home">Home</a>
+    <a href="#modules">Modules</a>
+    <a href="#about">About</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <div id="home">
+      <div class="title">20EI254 Robotics and Machine Vision System</div>
+      <div class="subtitle">Interactive Learning Platform with Module-wise Content</div>
+    </div>
+
+    <!-- Modules -->
+    <div id="modules" class="section">
+      <h2>?? Course Modules</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Module 1</h3>
+          <p>FUNDAMENTALS OFROBOTICS</p>
+          <a class="btn" href="https://www.slideshare.net/slideshow/comprehensive-course-on-robotics-and-machine-vision-systems-fundamentals-kinematics-control-and-applications/287043995" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+          <h3>Module 2</h3>
+          <p>KINEMATICS AND SENSOR FOR ROBOTICS</p>
+          <a class="btn" href="https://www.slideshare.net/slideshow/comprehensive-study-of-robotics-and-machine-vision-systems-kinematics-sensors-and-applications/287044084" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+          <h3>Module 3</h3>
+          <p>TRAJECTORYCONTROLTECHNIQUES IN ROBOTICS</p>
+          <a class="btn" href="https://www.slideshare.net/slideshow/advanced-robotics-and-machine-vision-systems-control-programming-and-applications/287044136" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+          <h3>Module 4</h3>
+          <p>MACHINE VISION SYSTEM</p>
+          <a class="btn" href="https://www.scribd.com/presentation/1027225409/Module-IV" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+          <h3>Module 5</h3>
+          <p>APPLICATIONS</p>
+          <a class="btn" href="https://www.scribd.com/presentation/1027225970/Module-V" target="_blank">Open</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="section">
+      <h2>????? About Course</h2>
+      <p>This platform provides structured learning materials for Robotics and Machine Vision Systems. Access each module to explore slides and study content.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
